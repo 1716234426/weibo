@@ -4,10 +4,15 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Class Status
+ * @package App\Models
+ */
 class Status extends Model
 {
     //
 
+    //一对一关联用户表
 
     public function user()
     {

@@ -57,6 +57,10 @@ class User extends Authenticatable
         return "http://www.gravatar.com/avatar/$hash?s=$size";
     }
 
+    /**
+     * 一对多关联微博记录
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
     public function statuses()
     {
         return $this->hasMany(Status::class);
